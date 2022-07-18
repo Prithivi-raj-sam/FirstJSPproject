@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"
     import = "java.util.List,com.chainsys.jspprojects.pojo.Employee,java.util.ArrayList"
+    import = "com.chainsys.jspprojects.dao.EmployeeDao"
     %>
 <!DOCTYPE html>
 <html>
@@ -12,7 +13,7 @@
 	<table> 
 <thead> </thead>
 <% 
-List<Employee> allEmployee = (ArrayList<Employee>)request.getAttribute("emplist");
+List<Employee> allEmployee = EmployeeDao.getAllEmployees();
 for(Employee emp: allEmployee){
  %>
  <tr>

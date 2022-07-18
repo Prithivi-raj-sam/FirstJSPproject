@@ -121,13 +121,7 @@
 			%><h1><%=errorPage%></h1><%
 			return;
 		}
-		try {
-			out.close();
-		} catch (Exception e) {
-			message +=" Error in Hire Date input </p>";
-			String errorPage=ExceptionManager.handleException(e, source, message);
-			%><h1><%=errorPage%></h1><%
-		}
+		
 		 %>
 </body>
 </html>

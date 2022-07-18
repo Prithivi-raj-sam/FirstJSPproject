@@ -119,14 +119,7 @@
 		%><h1><%=errorPage%></h1><%
 		return;
 	}
-	try {
-		out.close();
-	} catch (Exception e) {
-		message += "Message: " + e.getMessage();
-		String errorPage = ExceptionManager.handleException(e, source, message);
-		%><h1><%=errorPage%></h1><%
-		return;
-	}
+	
 	%>
 </body>
 </html>
