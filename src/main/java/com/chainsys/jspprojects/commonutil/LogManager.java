@@ -1,4 +1,4 @@
-package com.chainsys.jspproject;
+package com.chainsys.jspprojects.commonutil;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;

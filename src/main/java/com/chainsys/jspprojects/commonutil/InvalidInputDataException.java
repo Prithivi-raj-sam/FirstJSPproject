@@ -1,4 +1,4 @@
-package com.chainsys.jspproject;
+package com.chainsys.jspprojects.commonutil;
 
 public class InvalidInputDataException extends Exception{
 	public InvalidInputDataException() {

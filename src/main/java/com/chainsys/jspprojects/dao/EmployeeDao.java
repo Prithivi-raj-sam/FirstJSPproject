@@ -1,4 +1,4 @@
-package com.chainsys.jspproject;
+package com.chainsys.jspprojects.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.chainsys.jspprojects.pojo.Employee;
 
 import java.sql.SQLException;
 import java.sql.ResultSet;

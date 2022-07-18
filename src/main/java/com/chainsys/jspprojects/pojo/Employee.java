@@ -1,4 +1,4 @@
-package com.chainsys.jspproject;
+package com.chainsys.jspprojects.pojo;
 
 import java.util.Date;
 

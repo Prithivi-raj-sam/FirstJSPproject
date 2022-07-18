@@ -1,11 +1,6 @@
 package com.chainsys.jspproject;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Iterator;
-import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -14,41 +9,34 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.chainsys.jspprojects.commonutil.ExceptionManager;
-import com.chainsys.jspprojects.commonutil.InvalidInputDataException;
-import com.chainsys.jspprojects.commonutil.Validator;
-import com.chainsys.jspprojects.dao.EmployeeDao;
-import com.chainsys.jspprojects.pojo.Employee;
-
-
 /**
- * Servlet implementation class AddEmployee
+ * Servlet implementation class DeleteEmployee
  */
-@WebServlet("/AddEmployee")
-public class AddEmployee extends HttpServlet {
+@WebServlet("/DeleteEmployee")
+public class DeleteEmployee extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public AddEmployee() {
+    public DeleteEmployee() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		 
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-			RequestDispatcher rd = request.getRequestDispatcher("/addemp.jsp");
-            rd.forward(request, response);
-		
+		RequestDispatcher rd = request.getRequestDispatcher("/DeleteEmp.jsp");
+        rd.forward(request, response);
 	}
-	
+
 }

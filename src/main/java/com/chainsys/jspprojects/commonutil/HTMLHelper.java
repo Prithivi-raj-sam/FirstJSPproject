@@ -1,4 +1,4 @@
-package com.chainsys.jspproject;
+package com.chainsys.jspprojects.commonutil;
 
 public class HTMLHelper {
 	public static String getHTMLTemplate(String title,String body) {
